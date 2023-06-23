@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box; /*Não soma o tamanho do com o padding*/
+    font-family: 'Kanit', sans-serif;
+    }
+    
+    body{
+    
+    }
+
+h5{
+    text-align: center;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+   
+}
+
+.container{
+    max-width: 1080px;
+    display: flex;
+    margin: 0 auto;
+    align-items: right;
+    justify-content: right;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+
+}
+.menu{
+    width: 50%;
+}
+.menu nav a{
+    color: aquamarine;
+    text-decoration: none;
+    padding-right: 25px;
+    font-size: 20px;
+    position: relative;
+}
+
+.menu nav a::after{
+    content: " ";
+    width: 0px;
+    height: 4px;
+    background-image: linear-gradient(45deg, #836FFF, #B0C4DE);
+    position: absolute;
+    top: 35px;
+    left: 0;
+    transition: width 0.3s ;
+
+}
+
+.menu nav a:hover::after{
+    width: 45px;
+}
+        
+h1{
+    font-style: oblique;
+    margin: 20px;
+    padding: 30px;
+}
+
+.introducao{
+    text-align: justify;
+    font-size: 25px;
+    margin: 15px ;
+
+}
+
+.context{
+    max-width: 1280px;
+    margin: 0 auto;
+
+}
+
+form{
+    
+    max-width: 500px;
+    height: 450px;
+    padding: 100px;
+    margin: 50px;
+    align-items: center;
+
+    border-radius: 30px;
+    
+}
+
+form h1{
+    text-align: center;
+    font-size: 30px;
+    color: #0011ff;
+}
+form p{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.input-single{
+    position: relative;
+    margin: 20px 0;
+}
+
+.input-single label{
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: all 0.2s;
+    cursor: text;
+}
+
+.input{
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid;
+    padding: 5px;
+    outline: 0;
+
+}
+
+form .input-single .input:focus ~ label,
+form .input-single .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+}
+
+.btn{
+    width: 100%;
+    text-align: center;
+}
+
+form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+a{ /*voltar pra arrumar*/
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+section{  
+     column-count: 3;
+    column-gap: 10px;
+}
+
+.donda {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   
+}
+
+.graduation img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  
+    
+}
+
+.thelife img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   
+}
+
+.thecollage img{
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  
+}
+
+.grammy img{ 
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
+   
+}
+

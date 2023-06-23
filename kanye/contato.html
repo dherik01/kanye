@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Contacte a gente</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script lenguage="javascript" type="text/javascript">
+        function validar() {
+            var nome = form.nome.value;
+            var email = form.email.value;
+            var cpf = form.cpf.value;
+            var telefone = form.telefone.value;
+
+            if (nome == "") {
+                alert('por favor preencha o campo com seu nome');
+                form.nome.focus();
+                return false
+            }
+            if (email == "") {
+                alert('por favor preencha o campo com seu email');
+                form.email.focus();
+                return false
+            }
+            
+            }
+            if (telefone == "") {
+                alert('por favor preencha o campo com seu telefone');
+                form.telefone.focus();
+                return false
+            }
+        
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="menu">
+                <nav>
+                    <a href="index.html">Home</a>
+                    <a href="historia_ye.html">Historia</a>
+                    <a href="obras_ye.html">Obras</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="contato.html">Contato</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+   
+        <div class="context">
+            <form action="alerta.html" method="post">
+                <h1>Entre em contato</h1>
+                <p>preencha o formulario para entrarmos em contato com você</p>
+                <div class="input-single">
+                    <input type="text" name="" id="nome-box" class="input"
+                    autocomplete="off" required>
+                    <label for="nome-box">Nome</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="" id="email-box" class="input"
+                    autocomplete="off" required>
+                    <label for="email-box">Email</label>
+                </div>
+
+                <div class="input-single">
+                    <input type="text" name="" id="telefone-box" class="input"
+                    autocomplete="off" required>
+                    <label for="telefone-box">Telefone</label>
+                </div>
+
+                <div class="btn">
+                    <input type="submit" value="Enviar"></div>
+            </form>
+
+        </div>
+
+   
+    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <center>
+        <h5>Dherik Santos &copy todos os direitos reservados</h5>
+    </center>
+</body>
+</body>
+
+</html>
